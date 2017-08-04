@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.imageuploader.MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="#424242"
+        android:text="Image Uploader"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:padding="24dp"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:text="Devoloped by : Bikki Kumar Sha \n\nEmail: bikkikumarsha@gmail.com" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="24dp"
+        android:id="@+id/image_display"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="16dp"
+            tools:text="Image status"
+            android:textColor="#000"
+            android:id="@+id/upload_textview"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#6769db"
+        android:text="Click and Upload" />
+
+</LinearLayout>
